@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+<link rel="icon" href="images/logo-only-Z.png">
+<title>Contact — ZMC Partners</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute"><symbol id="zmark" viewBox="0 0 24 24"><path d="M5 5 H19 V8.5 L10 15.5 H19 V19 H5 V15.5 L14 8.5 H5 Z" fill="#fff"/></symbol>
+<symbol id="ic-factory" viewBox="0 0 48 48"><path d="M6 42V20l11 7V20l11 7V12h6l2 30H6z"/><path d="M12 42v-7M22 42v-7M32 42v-7"/></symbol>
+<symbol id="ic-people" viewBox="0 0 48 48"><circle cx="17" cy="16" r="6"/><circle cx="33" cy="18" r="5"/><path d="M7 40c0-7 5-12 10-12s10 5 10 12M27 40c0-6 4-10 8-10s7 4 7 9"/></symbol>
+<symbol id="ic-target" viewBox="0 0 48 48"><circle cx="24" cy="24" r="17"/><circle cx="24" cy="24" r="9"/><circle cx="24" cy="24" r="2.5"/></symbol>
+<symbol id="ic-talk" viewBox="0 0 48 48"><path d="M8 10h26a4 4 0 0 1 4 4v14a4 4 0 0 1-4 4H20l-9 7v-7H8a4 4 0 0 1-4-4V14a4 4 0 0 1 4-4z"/></symbol>
+<symbol id="ic-gear" viewBox="0 0 48 48"><circle cx="24" cy="24" r="7"/><path d="M24 6v6M24 36v6M6 24h6M36 24h6M11 11l4 4M33 33l4 4M37 11l-4 4M15 33l-4 4"/></symbol>
+</svg>
+<header class="nav">
+  <div class="nav-in">
+    <div class="brand" data-view="home"><img class="logo-img" src="images/zmc-logo.png" alt="ZMC Partners"></div>
+    <nav class="navlinks" id="nav">
+      <a class="lnk" data-view="how">How the System Works</a>
+      <a class="lnk" data-view="about">About ZMC</a>
+      <a class="lnk" data-view="contact">Contact</a>
+      <button class="btn" data-view="contact">Start the Conversation <span class="arr">→</span></button>
+    </nav>
+    <button class="hamb" id="hamb" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<main>
+<section class="view" id="view-contact">
+  <div class="sect gsec">
+    <div class="wrap">
+      <div style="max-width:62rem">
+        <div><span class="eyebrow on-dark">Contact</span><h1 style="margin:14px 0">Is Leadership Execution Limiting Your Operation?</h1>
+          <h3 style="color:#fff;font-weight:600">If leadership execution is creating friction in your operation — inconsistent standards, recurring problems, uneven coaching — this conversation is worth having.</h3>
+          <p style="margin-top:14px">No pitch. No pressure. A straightforward discussion about where your operation is and whether a leadership system makes sense.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sect">
+    <div class="wrap">
+      <div class="form-grid">
+        <div>
+          <div class="divider-tag">Start the Conversation</div>
+          <h2 style="margin:8px 0 24px">Send a note</h2>
+          <form id="zmcform" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="bot-field">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+              <div class="field"><label for="fn">First name</label><input id="fn" name="first-name" type="text"></div>
+              <div class="field"><label for="ln">Last name</label><input id="ln" name="last-name" type="text"></div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+              <div class="field"><label for="em">Email</label><input id="em" name="email" type="email"></div>
+              <div class="field"><label for="co">Company</label><input id="co" name="company" type="text"></div>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+              <div class="field"><label for="rl">Role</label><input id="rl" name="role" type="text" placeholder="e.g. Plant Manager, VP Ops, HR Director"></div>
+              <div class="field"><label for="sz">Operation size</label><select id="sz" name="operation-size"><option value="">Select…</option><option>Under 500 employees</option><option>500–1,000 employees</option><option>1,000–2,000 employees</option><option>2,000+ employees</option></select></div>
+            </div>
+            <div class="field"><label for="ms">Tell us about your operation and leadership challenges</label><textarea id="ms" name="message" placeholder="Where is leadership inconsistency limiting Safety, Quality, Delivery, Cost, or Growth?"></textarea></div>
+            <button class="btn" type="submit">Send message <span class="arr">→</span></button>
+          </form>
+        </div>
+        <div class="contact-side">
+          <h3>Direct contact</h3>
+          <div class="ci"><span class="k">Email</span><a href="mailto:info@zmc-partners.com">info@zmc-partners.com</a></div>
+          <div class="ci"><span class="k">Principal</span><span>Michael Zande<br>Founder &amp; Principal Consultant</span></div>
+          <div class="ci"><span class="k">LinkedIn</span><a href="https://www.linkedin.com/company/zmc-partners/" target="_blank" rel="noopener">/company/zmc-partners</a></div>
+          <div class="ci"><span class="k">Region</span><span>Southeast and mid-Atlantic manufacturing corridors, with select engagements considered based on fit.</span></div>
+          <div class="plate" style="margin-top:22px;background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.16)"><span class="plate-tag">Who this is for</span><p style="color:#B7CFC0;font-size:.95rem">Manufacturing operations where leadership consistency directly impacts Safety, Quality, Delivery, and Cost — and where current approaches aren't producing lasting improvement.</p></div>
+          <div class="plate" style="margin-top:16px;background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.16)"><span class="plate-tag">What happens next</span><p style="color:#B7CFC0;font-size:.95rem">Expect a response within one business day. The first conversation is typically 30 minutes — focused on your operation, your challenges, and whether there is a real fit.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="ft">
+  <div class="wrap">
+    <div class="ft-top">
+      <div>
+        <div class="ft-logo-chip" data-view="home" style="cursor:pointer"><img src="images/zmc-logo.png" alt="ZMC Partners"></div>
+        <p style="max-width:24rem;color:#A9C4B6">Leadership systems for manufacturing — defining and executing consistent leadership across supervisors, managers, and plant leadership.</p>
+      </div>
+      <div><h5>Explore</h5>
+        <a class="fl" data-view="how">How the System Works</a>
+        <a class="fl" data-view="plos">PLOS — The What</a>
+        <a class="fl" data-view="les">LES — The How</a>
+        <a class="fl" data-view="about">About ZMC</a>
+        <a class="fl" data-view="contact">Contact</a>
+      </div>
+      <div><h5>Connect</h5>
+        <a class="fl" href="https://www.linkedin.com/company/zmc-partners/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="fl" href="mailto:info@zmc-partners.com">info@zmc-partners.com</a>
+        <div style="margin-top:18px"><button class="btn" data-view="contact">Start the Conversation <span class="arr">→</span></button></div>
+      </div>
+    </div>
+    <div class="ft-bottom"><span class="who">Michael Zande | Founder &amp; Principal Consultant</span><span>© 2026 ZMC Partners</span></div>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>
