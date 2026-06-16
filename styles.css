@@ -66,7 +66,7 @@
   .plate::before{top:-1px;left:-1px;border-right:none;border-bottom:none}
   .plate::after{bottom:-1px;right:-1px;border-left:none;border-top:none}
   .gsec .plate::before,.gsec .plate::after{border-color:var(--green-bright)}
-  .plate-tag{position:absolute;top:14px;right:18px;font-family:"IBM Plex Mono",monospace;font-size:.65rem;letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
+  .plate-tag{position:absolute;top:14px;right:18px;font-family:"IBM Plex Mono";font-size:.65rem;letter-spacing:.16em;color:var(--steel-blue);text-transform:uppercase}
   .gsec .plate-tag{color:#8FB6A0}
 
   /* ---------- nav ---------- */
