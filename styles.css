@@ -19,7 +19,7 @@
     --line-2:#D6DBD2;
     --maxw:1180px;
   }
-  html{color-scheme:only light;background:var(--paper);background-image:linear-gradient(var(--paper),var(--paper));-webkit-text-size-adjust:100%}
+  html{color-scheme:only light;background:var(--paper);background-image:linear-gradient(var(--paper),var(--paper));-webkit-text-size-adjust:100%;overflow-y:scroll}
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
   body{font-family:"IBM Plex Sans",system-ui,sans-serif;background:var(--paper);background-image:linear-gradient(var(--paper),var(--paper));color:var(--ink);line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden}
