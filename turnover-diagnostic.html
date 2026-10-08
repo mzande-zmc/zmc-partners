@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="supported-color-schemes" content="light">
+<link rel="icon" href="images/logo-only-Z.png">
+<title>Plant Turnover Impact Review — ZMC Partners</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  :root{
+    --steel-blue:#2F5577;
+    --spartan-green:#2E5939;
+    --confident-blue:#2E7BC8;
+    --light-blue:#7FBDFF;
+    --burnt-orange:#C2612E;
+    --vivid-orange:#FF751F;
+    --warm-white:#F7F5EF;
+    --charcoal:#2B2B2B;
+    --light-gray:#D9DEE4;
+    --white:#FFFFFF;
+    --muted:#66727C;
+    --ink:#222A30;
+    --ink-soft:#46535D;
+    --green-deep:#23452D;
+    --green-line:#BFD1C3;
+    --shadow:0 18px 44px rgba(31,46,58,.10);
+  }
+
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--warm-white);color:var(--ink);font-family:'IBM Plex Sans',Arial,sans-serif;line-height:1.6}
+  a{text-decoration:none;color:inherit}
+  .td-wrap{width:min(1160px,calc(100% - 40px));margin:0 auto}
+  .td-nav{position:sticky;top:0;z-index:50;background:rgba(247,245,239,.95);backdrop-filter:blur(12px);border-bottom:1px solid rgba(47,85,119,.12)}
+  .td-nav-in{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+  .td-logo img{height:42px;width:auto;display:block}
+  .td-nav-note{font-size:.86rem;color:var(--muted);font-weight:600;letter-spacing:.01em}
+
+  .td-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 22px;border-radius:8px;background:var(--burnt-orange);color:#fff;font-family:'Archivo',sans-serif;font-weight:800;letter-spacing:-.01em;box-shadow:0 10px 24px rgba(194,97,46,.20);transition:.18s ease}
+  .td-btn:hover{transform:translateY(-1px);background:#AA5226}
+  .td-btn.secondary{background:transparent;color:var(--steel-blue);border:1px solid rgba(47,85,119,.28);box-shadow:none}
+  .td-btn.secondary:hover{background:#fff}
+
+  .td-hero{padding:86px 0 78px;position:relative;overflow:hidden}
+  .td-hero:before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:rgba(127,189,255,.18);right:-100px;top:-120px;filter:blur(2px)}
+  .td-hero:after{content:"";position:absolute;width:230px;height:230px;border-radius:50%;background:rgba(194,97,46,.08);right:260px;bottom:-100px}
+  .td-hero-grid{display:grid;grid-template-columns:minmax(0,1.18fr) minmax(320px,.82fr);gap:64px;align-items:center;position:relative;z-index:1}
+  .eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--steel-blue);font-weight:600}
+  .eyebrow:before{content:"";width:34px;height:2px;background:var(--burnt-orange)}
+  .td-hero h1{font-family:'Archivo',sans-serif;font-size:clamp(2.6rem,5vw,5.2rem);line-height:.98;letter-spacing:-.045em;margin:18px 0 24px;max-width:900px}
+  .td-hero h1 .accent{color:var(--spartan-green)}
+  .td-kicker{font-family:'Archivo',sans-serif;font-size:1.1rem;font-weight:800;color:var(--steel-blue);margin-bottom:18px}
+  .td-lead{font-size:1.14rem;color:var(--ink-soft);max-width:760px}
+  .td-bullets{display:grid;gap:10px;margin:26px 0 30px;padding:0;list-style:none;max-width:760px}
+  .td-bullets li{display:grid;grid-template-columns:20px 1fr;gap:10px;align-items:start}
+  .td-bullets li:before{content:"";width:9px;height:9px;border-radius:50%;background:var(--confident-blue);margin-top:9px}
+  .td-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .td-trust{margin-top:16px;font-size:.9rem;color:var(--muted)}
+
+  .td-hero-card{background:#fff;border:1px solid rgba(47,85,119,.12);border-radius:20px;padding:30px;box-shadow:var(--shadow);position:relative}
+  .td-hero-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:6px;background:linear-gradient(var(--confident-blue),var(--spartan-green),var(--burnt-orange));border-radius:20px 0 0 20px}
+  .td-card-label{font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;color:var(--steel-blue);font-weight:600}
+  .td-big-num{font-family:'Archivo',sans-serif;font-size:3.4rem;font-weight:900;letter-spacing:-.05em;color:var(--spartan-green);line-height:1;margin:14px 0 6px}
+  .td-card-copy{color:var(--ink-soft);font-size:.97rem}
+  .td-mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+  .td-mini{background:var(--warm-white);border:1px solid rgba(47,85,119,.1);border-radius:12px;padding:14px}
+  .td-mini strong{display:block;font-family:'Archivo';font-size:.92rem}
+  .td-mini span{font-size:.82rem;color:var(--muted)}
+
+  .td-section{padding:82px 0}
+  .td-section.white{background:#fff}
+  .td-section.blue{background:var(--steel-blue);color:#fff}
+  .td-section.green{background:var(--spartan-green);color:#fff}
+  .td-section-head{max-width:760px;margin-bottom:38px}
+  .td-section h2{font-family:'Archivo',sans-serif;font-size:clamp(2rem,3.2vw,3.25rem);line-height:1.05;letter-spacing:-.035em;margin:12px 0 14px}
+  .td-section-head p{font-size:1.06rem;color:var(--ink-soft)}
+  .blue .td-section-head p,.green .td-section-head p{color:rgba(255,255,255,.78)}
+  .blue .eyebrow,.green .eyebrow{color:#DCEAF6}
+
+  .td-grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .td-value-card{background:#fff;border:1px solid rgba(47,85,119,.12);border-radius:16px;padding:26px;min-height:220px;position:relative;overflow:hidden}
+  .td-value-card .n{font-family:'IBM Plex Mono',monospace;font-size:.78rem;color:var(--burnt-orange);font-weight:600;letter-spacing:.08em}
+  .td-value-card h3{font-family:'Archivo';font-size:1.28rem;line-height:1.15;margin:12px 0 10px}
+  .td-value-card p{color:var(--ink-soft);font-size:.96rem}
+  .td-value-card:after{content:"";position:absolute;left:0;bottom:0;width:100%;height:4px;background:var(--light-blue)}
+  .td-value-card:nth-child(2):after,.td-value-card:nth-child(5):after{background:var(--spartan-green)}
+  .td-value-card:nth-child(3):after,.td-value-card:nth-child(6):after{background:var(--burnt-orange)}
+
+  .td-process{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;margin-top:34px}
+  .td-step{position:relative;padding:22px 18px 20px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:14px;min-height:210px}
+  .td-step .stepno{font-family:'Archivo';font-size:2.6rem;font-weight:900;line-height:1;color:var(--light-blue)}
+  .td-step h3{font-family:'Archivo';font-size:1.05rem;margin:14px 0 8px}
+  .td-step p{font-size:.91rem;color:rgba(255,255,255,.78)}
+
+  .td-live-grid{display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);gap:54px;align-items:center}
+  .td-quote{background:var(--warm-white);border:1px solid rgba(47,85,119,.12);border-radius:18px;padding:28px;box-shadow:var(--shadow)}
+  .td-quote p{font-family:'Archivo';font-size:1.35rem;line-height:1.3;letter-spacing:-.02em;color:var(--charcoal);margin:0}
+  .td-quote .small{font-family:'IBM Plex Sans';font-size:.9rem;color:var(--muted);margin-top:16px}
+  .td-checks{display:grid;gap:13px;margin:24px 0 0;padding:0;list-style:none}
+  .td-checks li{display:grid;grid-template-columns:24px 1fr;gap:10px}
+  .td-checks li:before{content:"✓";font-weight:800;color:var(--spartan-green)}
+
+  .td-founder{display:grid;grid-template-columns:170px 1fr;gap:30px;align-items:center;background:#fff;border:1px solid rgba(47,85,119,.12);border-radius:18px;padding:28px;box-shadow:var(--shadow)}
+  .td-founder img{width:170px;height:170px;object-fit:cover;border-radius:14px}
+  .td-founder h3{font-family:'Archivo';font-size:1.55rem;margin:6px 0 8px}
+  .td-founder p{color:var(--ink-soft);margin:0}
+  .td-proof{display:flex;gap:16px;flex-wrap:wrap;margin-top:18px}
+  .td-proof span{font-family:'IBM Plex Mono';font-size:.76rem;padding:8px 10px;border-radius:999px;background:#EEF4F7;color:var(--steel-blue);font-weight:600}
+
+  .td-final{text-align:center;padding:86px 0}
+  .td-final h2{max-width:870px;margin:0 auto 16px}
+  .td-final p{max-width:740px;margin:0 auto 28px;color:rgba(255,255,255,.80)}
+  .td-final .td-btn{background:var(--vivid-orange)}
+  .td-final .td-btn:hover{background:#E86516}
+  .td-final-note{font-size:.88rem;color:rgba(255,255,255,.72);margin-top:14px}
+
+  .td-footer{background:#193122;color:#D8E7DE;padding:34px 0}
+  .td-footer-in{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .td-footer img{height:34px}
+  .td-footer small{color:#A9C4B6}
+
+  @media(max-width:980px){
+    .td-hero-grid,.td-live-grid{grid-template-columns:1fr}
+    .td-grid-3{grid-template-columns:1fr 1fr}
+    .td-process{grid-template-columns:1fr 1fr}
+    .td-hero-card{max-width:680px}
+  }
+  @media(max-width:680px){
+    .td-wrap{width:min(100% - 24px,1160px)}
+    .td-nav-note{display:none}
+    .td-hero{padding:58px 0 54px}
+    .td-grid-3,.td-process{grid-template-columns:1fr}
+    .td-founder{grid-template-columns:1fr}
+    .td-founder img{width:140px;height:140px}
+    .td-mini-grid{grid-template-columns:1fr}
+    .td-section{padding:62px 0}
+  }
+</style>
+</head>
+<body>
+
+<header class="td-nav">
+  <div class="td-wrap td-nav-in">
+    <a class="td-logo" href="index.html" aria-label="ZMC Partners home">
+      <img src="images/zmc-logo.png" alt="ZMC Partners">
+    </a>
+    <div class="td-nav-note">Plant Turnover Impact Review</div>
+    <a class="td-btn" href="YOUR_BOOKINGS_URL">Book My Review <span aria-hidden="true">→</span></a>
+  </div>
+</header>
+
+<main>
+  <section class="td-hero">
+    <div class="td-wrap td-hero-grid">
+      <div>
+        <span class="eyebrow">Plant Turnover Impact Review</span>
+        <h1>Find the pressure points keeping turnover high. <span class="accent">Leave knowing where to act first.</span></h1>
+        <div class="td-kicker">Plant Turnover Impact Report + Custom Action Plan</div>
+        <p class="td-lead">Your turnover number confirms that you have a problem. This plant-specific review helps you understand what it is costing, where the greatest operational pressure is building, what may be driving it, and what deserves attention first.</p>
+        <ul class="td-bullets">
+          <li>What your turnover is likely costing the operation</li>
+          <li>What is likely driving the turnover</li>
+          <li>Where the greatest operational pressure is building</li>
+          <li>Which patterns deserve immediate attention</li>
+          <li>What your leadership team should address first</li>
+          <li>How to get HR, operations, finance, and plant leadership behind the response</li>
+        </ul>
+        <div class="td-actions">
+          <a class="td-btn" href="YOUR_BOOKINGS_URL">Book My Plant Turnover Impact Review <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="td-trust">Prepared personally by Mike Zande, drawing on 18 years inside manufacturing HR.</div>
+      </div>
+
+      <aside class="td-hero-card" aria-label="What the review produces">
+        <div class="td-card-label">What you leave with</div>
+        <div class="td-big-num">3</div>
+        <div class="td-card-copy"><strong>Immediate priorities</strong> for where to focus first — supported by a plant-specific turnover cost analysis and a working action plan.</div>
+        <div class="td-mini-grid">
+          <div class="td-mini"><strong>Cost</strong><span>Translate turnover into operational impact.</span></div>
+          <div class="td-mini"><strong>Concentration</strong><span>See where the pressure is building.</span></div>
+          <div class="td-mini"><strong>Drivers</strong><span>Identify what deserves deeper investigation.</span></div>
+          <div class="td-mini"><strong>Action</strong><span>Know who to involve and what to address first.</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="td-section white">
+    <div class="td-wrap">
+      <div class="td-section-head">
+        <span class="eyebrow">What you will receive</span>
+        <h2>A practical diagnosis you can use.</h2>
+        <p>This is designed to move the turnover conversation from a percentage on a dashboard to a business issue your leadership team can understand and act on.</p>
+      </div>
+
+      <div class="td-grid-3">
+        <article class="td-value-card"><div class="n">01</div><h3>A clear diagnosis</h3><p>See where turnover is concentrated across roles, shifts, tenure groups, and stages of the employee experience.</p></article>
+        <article class="td-value-card"><div class="n">02</div><h3>The operational impact</h3><p>Understand how turnover is affecting overtime, ramp-up time, output, experienced employees, burnout, quality, and the stability of the wider team.</p></article>
+        <article class="td-value-card"><div class="n">03</div><h3>The pressure points to investigate</h3><p>Identify where onboarding, supervisor behavior, leadership follow-through, staffing practices, scheduling, or other plant conditions may require attention.</p></article>
+        <article class="td-value-card"><div class="n">04</div><h3>Your three immediate priorities</h3><p>Leave knowing which areas deserve attention first and which questions still need answering.</p></article>
+        <article class="td-value-card"><div class="n">05</div><h3>A stakeholder plan</h3><p>Understand who needs to be involved and how to frame the issue so HR, operations, finance, and plant leadership can act on it together.</p></article>
+        <article class="td-value-card"><div class="n">06</div><h3>A report you can use internally</h3><p>Receive a polished Plant Turnover Impact Report + Custom Action Plan that you can keep, share, and use to begin the internal conversation.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="td-section blue">
+    <div class="td-wrap">
+      <div class="td-section-head">
+        <span class="eyebrow">How it works</span>
+        <h2>Prepared before the call. Sharpened during it. Useful after it.</h2>
+        <p>The process is intentionally simple. The questionnaire gives Mike enough information to prepare. The live review turns that information into a useful diagnosis.</p>
+      </div>
+
+      <div class="td-process">
+        <article class="td-step"><div class="stepno">1</div><h3>Book your review</h3><p>Choose a convenient time for your private Plant Turnover Impact Review.</p></article>
+        <article class="td-step"><div class="stepno">2</div><h3>Complete a short questionnaire</h3><p>Mike personally sends a 10-question diagnostic so the analysis can be prepared before you meet.</p></article>
+        <article class="td-step"><div class="stepno">3</div><h3>Receive your initial analysis</h3><p>Mike calculates the estimated turnover cost and reviews the patterns in your responses.</p></article>
+        <article class="td-step"><div class="stepno">4</div><h3>Work through the findings</h3><p>You review the report together, test the initial conclusions, and fill in what the questionnaire cannot explain.</p></article>
+        <article class="td-step"><div class="stepno">5</div><h3>Leave with the action plan</h3><p>Mike updates the report so you have a useful internal document and a clear set of next priorities.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="td-section">
+    <div class="td-wrap td-live-grid">
+      <div>
+        <span class="eyebrow">Why the review happens live</span>
+        <h2>Turnover data rarely explains the full situation on its own.</h2>
+        <p class="td-lead">The live conversation allows Mike to understand what is happening inside your plant, test the initial findings, and shape the action plan around your priorities.</p>
+        <ul class="td-checks">
+          <li>Validate what the numbers actually mean in your operation</li>
+          <li>Separate symptoms from likely root causes</li>
+          <li>Identify where more information is genuinely needed</li>
+          <li>Determine what deserves attention first</li>
+          <li>Clarify which stakeholders need to be involved</li>
+        </ul>
+      </div>
+      <div class="td-quote">
+        <p>“The conversation is what makes the report specific, accurate, and useful.”</p>
+        <div class="small">This is a peer-to-peer working session. There is no generic sales presentation and no pitch waiting at the end.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="td-section white">
+    <div class="td-wrap">
+      <div class="td-founder">
+        <img src="images/michael-zande.jpg" alt="Mike Zande, Founder & Principal Consultant">
+        <div>
+          <span class="eyebrow">Prepared personally</span>
+          <h3>Mike Zande</h3>
+          <p>Founder &amp; Principal Consultant, ZMC Partners. Mike brings 18 years of manufacturing HR and leadership experience, from plant-level work through enterprise and global roles, with a focus on connecting leadership systems, workforce realities, and operational performance.</p>
+          <div class="td-proof">
+            <span>Manufacturing HR</span>
+            <span>Leadership Systems</span>
+            <span>Operational Performance</span>
+            <span>Data + Diagnostics</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="td-section green td-final">
+    <div class="td-wrap">
+      <span class="eyebrow">Start with the real problem</span>
+      <h2>See what is driving turnover. Know where it is hitting. Decide what to address first.</h2>
+      <p>Book your Plant Turnover Impact Review. After booking, Mike will personally send the short questionnaire required to begin preparing your report.</p>
+      <a class="td-btn" href="YOUR_BOOKINGS_URL">Book My Plant Turnover Impact Review <span aria-hidden="true">→</span></a>
+      <div class="td-final-note">Plant-specific analysis • Private working session • Report + action plan provided at no cost</div>
+    </div>
+  </section>
+</main>
+
+<footer class="td-footer">
+  <div class="td-wrap td-footer-in">
+    <img src="images/zmc-logo.png" alt="ZMC Partners">
+    <small>Leadership Systems. Operational Results.</small>
+    <small>© 2026 ZMC Partners</small>
+  </div>
+</footer>
+
+</body>
+</html>
