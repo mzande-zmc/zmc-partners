@@ -109,9 +109,7 @@
 .td-nav + .td-hero{
   margin-top:74px;
 }
-.eyebrow + h2{
-  color:#fff !important;
-}
+
 
   .nav-in{max-width:var(--maxw);margin:0 auto;padding:0 28px;height:74px;display:flex;align-items:center;justify-content:space-between}
   .brand{display:flex;align-items:center;gap:12px;cursor:pointer}
@@ -393,3 +391,15 @@
     .lesmx .mx-cell{text-align:left;display:block;border-radius:0;border-top:none}
     .lesmx .mx-cell .role{display:block;font-family:"IBM Plex Mono";font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--green);margin-bottom:5px}
   }
+/* Turnover diagnostic - blue How It Works section */
+.td-section.blue h2{
+  color:#fff !important;
+}
+
+.td-section.blue .td-step h3{
+  color:#fff !important;
+}
+
+.td-section.blue .td-step p{
+  color:#E7EEF6 !important;
+}
