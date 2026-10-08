@@ -46,18 +46,40 @@
   .tint{background:var(--tint);background-image:linear-gradient(var(--tint),var(--tint))}
   .center{text-align:center;margin-left:auto;margin-right:auto}
 
-  /* green/dark sections */
-  .gsec{background:var(--green-deep);background-image:linear-gradient(var(--green-deep),var(--green-deep));color:#DCEAE1}
-  .bsec{background:var(--steel-blue);background-image:linear-gradient(var(--steel-blue),var(--steel-blue));color:#EEF2F8}
-  .bsec h1,.bsec h2,.bsec h3,.bsec h4{color:#fff}
-  .bsec p{color:#D0DCF0}
-  .bsec .lead{color:#C0D0E8}
-  .bsec strong{color:#fff}
-  .bsec .eyebrow{color:#fff;border-color:#fff}
-  .bsec .eyebrow::before{background:#fff}
-  .gsec h1,.gsec h2,.gsec h3,.gsec h4{color:#fff}
-  .gsec p{color:#B7CFC0}
-  .gsec .lead{color:#CFE3D6}
+ /* green/dark sections */
+.gsec{
+  background:var(--green-deep);
+  background-image:linear-gradient(var(--green-deep),var(--green-deep));
+  color:#DCEAE1;
+}
+
+.bsec{
+  background:var(--steel-blue);
+  background-image:linear-gradient(var(--steel-blue),var(--steel-blue));
+  color:#EEF2F8;
+}
+
+.bsec h1,
+.bsec h2,
+.bsec h3,
+.bsec h4,
+.bsec .week h4{
+  color:#fff;
+}
+
+.bsec p,
+.bsec .week p{
+  color:#E7EEF6;
+}
+
+.bsec .lead{color:#E7EEF6}
+.bsec strong{color:#fff}
+.bsec .eyebrow{color:#fff;border-color:#fff}
+.bsec .eyebrow::before{background:#fff}
+
+.gsec h1,.gsec h2,.gsec h3,.gsec h4{color:#fff}
+.gsec p{color:#B7CFC0}
+.gsec .lead{color:#CFE3D6}
 
   /* ---------- engineering plate signature ---------- */
   .plate{position:relative;border:1px solid var(--line-2);background:var(--paper-2);padding:clamp(26px,3.5vw,48px)}
