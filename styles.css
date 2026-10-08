@@ -110,7 +110,9 @@
   margin-top:74px;
 }
 .td-confidentiality{
-  margin-top:28px;
+  grid-column:1 / -1;
+  width:100%;
+  margin-top:8px;
   padding-top:20px;
   border-top:1px solid rgba(255,255,255,.18);
   color:#E7EEF6;
@@ -121,7 +123,6 @@
 .td-confidentiality strong{
   color:#fff;
 }
-
   .nav-in{max-width:var(--maxw);margin:0 auto;padding:0 28px;height:74px;display:flex;align-items:center;justify-content:space-between}
   .brand{display:flex;align-items:center;gap:12px;cursor:pointer}
   .logo-badge{width:40px;height:40px;border-radius:9px;background:var(--green);display:grid;place-items:center;flex:none;box-shadow:0 2px 8px rgba(23,138,85,.28)}
