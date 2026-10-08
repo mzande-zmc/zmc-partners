@@ -411,3 +411,7 @@
 .td-step h3{
   color:#fff !important;
 }
+/* Live review section heading */
+.td-live-grid h2{
+  color:var(--ink) !important;
+}
